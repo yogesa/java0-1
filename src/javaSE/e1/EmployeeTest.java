@@ -14,5 +14,10 @@ public class EmployeeTest {
         em1.setSalary(20000.00);
         System.out.println(em1.toString());
 
+        Employee ech = new Employee("陈辉");
+        ech.setDestination("jiujaing");
+        ech.setAge(25);;
+        System.out.println(ech.toString());
+
     }
 }

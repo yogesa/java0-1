@@ -1,10 +1,12 @@
 package javaSE.e1;
 
 public class Employee {
-    String name;
-    int age;
-    String destination;
-    double salary;
+
+    private  String name;
+    private  int age;
+    private  String destination;
+    private static double salary;
+    public static final String DEPARTMENT = "开发人员";
 
     Employee()
     {
@@ -34,7 +36,7 @@ public class Employee {
         return destination;
     }
 
-    public void setDestination(String destination) {
+    void setDestination(String destination) {
         this.destination = destination;
     }
 
@@ -54,5 +56,10 @@ public class Employee {
                 ", destination='" + destination + '\'' +
                 ", salary=" + salary +
                 '\n';
+    }
+
+    public static void main(String[] args) {
+        salary = 10000;
+        System.out.println(DEPARTMENT+"工资为："+salary);
     }
 }
